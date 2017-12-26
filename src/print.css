@@ -1,0 +1,29 @@
+@page { size: auto;  margin: 0mm; }
+
+body {
+  font-size: 13px;
+}
+
+#resume {
+  box-shadow: none;
+  padding: 2em 3em;
+}
+
+p {
+  /*margin: .8em 0;*/
+}
+
+head, section {
+  /*margin: 1em 0;*/
+  page-break-inside: avoid;
+}
+
+.Project-duration {
+  left: -94px;
+}
+
+.Grid {
+  & h3 {
+    font-size: 1.07em;
+  }
+}

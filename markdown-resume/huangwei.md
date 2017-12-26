@@ -7,15 +7,15 @@
 
 ------
 
-### Profile {#profile}
+### Summary {#profile}
 
-I’m a Senior Front-End Engineer with 4 years working experience. Crafting interesting and useful tools is my jam. In the recent past, I have given talks at development conferences, actively participated in the translation of technical books, and started several open source projects.
+I’m a Senior Front-End Engineer with 4 years working experience. Crafting interesting and useful tools is my jam. In the recent past, I have given talks at development conferences, started several open source projects, and actively participated in the translation of technical books.
 
 ------
 
 ### Work Experience {#experience}
 
-Qihu Ltd
+Qihoo 360 Technology Co. Ltd
 : *Senior Front-End Developer - Annual Excellent Employee of department*
 : *[Shengxiang](https://ppt.baomitu.com/editor) - an online presentation editor*
   __2016-2017__
@@ -58,7 +58,7 @@ Qihu Ltd
 [AnimationGenerator](https://chrome.google.com/webstore/detail/animation-generator/kionilekanaambbbnjghihllokicnnlj?utm_source=chrome-ntp-icon)
 : *Chrome Extension - Creator*
     __2014__
-    A Chrome Devtools extension which can help generate animation codes for web pages quickly. 
+    A Chrome Devtools extension which can help generate animation codes for web pages quickly.
 
 
 ------

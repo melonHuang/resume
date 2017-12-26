@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Wendy Huang - I want to build tools for humans</title>
+    <link rel="stylesheet" href="/dist/91959775256322cca0cacd92548f3587.css">
+    <link media="print" rel="stylesheet" href="/dist/8ca40c593c671508d625a35812dcf094.css">
+    <link rel="shortcut icon" type="image/png" href="/dist/6226f227c01238dae7fb27ae300dd908.png">
+    <meta name="description" content="Wendy Huang, nickname Melon, enjoying life as a Front-End Engineer">
+  </head>
+  <body>
+    <main id="resume">
+      <script type="template" id="template">
+      <header>
+        <h1 class="Name">{{= it.name}}</h1>
+        <p class="Slogan">{{= it.slogan}}</p>
+        <ul class="Contact u-reset-ul">
+          <li class="ContactItem">
+              <i class="icon-email"></i>
+              <a href="mailto:{{= it.email}}">{{= it.email}}</a>
+          </li>
+          <li class="ContactItem">
+              <i class="icon-home"></i>
+              <a href="{{= it.website}}" target="blank">{{= it.website}}</a>
+          </li>
+          <li class="ContactItem">
+              <i class="icon-phone"></i>
+              <a href="tel:{{= it.phone}}">{{= it.phonePrefix}}{{= it.phone}}</a>
+          </li>
+        </ul>
+      </header>
+      <section>
+        <h2><i class="icon-dialog"></i>Summary</h2>
+        <hr>
+        <p class="Summary">{{= it.summary}}</p>
+      </section>
+      <section>
+        <h2><i class="icon-work"></i>Work Experience</h2>
+        <hr>
+        <ul class="WorkList">
+          {{~ it.works :work}}
+          <li class="WorkList-item Work">
+            <p class="Work-duration Work-duration--highlight">{{= work.duration}}</p>
+            <h3 class="Work-name">{{= work.company}}</h3>
+            <p class="Work-intro">{{= work.position}}</p>
+            <ul class="ProjectList">
+              {{~ work.projects :project}}
+              <li class="ProjectList-item Project">
+                <p class="Project-duration">{{= project.duration}}</p>
+                {{? project.website}}
+                <h4 class="Project-name">
+                  <a href="{{= project.website}}" target="blank">
+                  {{= project.name}}
+                  </a>
+                </h4>
+                {{??}}
+                <h4 class="Project-name">{{= project.name}}</h4>
+                {{?}}
+                <ul class="Project-detail">
+                  {{~ project.details :detail}}
+                    <li>{{= detail}}</li>
+                  {{~}}
+                </ul>
+              </li>
+              {{~}}
+            </ul>
+          </li>
+          {{~}}
+        </ul>
+      </section>
+      <section>
+        <h2><i class="icon-project"></i>Open Source Projects</h2>
+        <hr>
+        <ul class="WorkList">
+          {{~ it.projects :item}}
+          <li class="WorkList-item Work">
+            <p class="Work-duration">{{= item.duration}}</p>
+            <h3 class="Work-name">
+              <a href="{{= item.website}}" target="blank">
+              {{= item.name}}
+              </a>
+            </h3>
+            <p class="Work-intro">{{= item.intro}}</p>
+          </li>
+          {{~}}
+        </ul>
+      </section>
+      <div class="Grid">
+        <section class="Grid-col">
+          <h2><i class="icon-presentation"></i>Speaking</h2>
+          <hr>
+          <ul class="WorkList">
+            {{~ it.speaking :item}}
+            <li class="WorkList-item Work">
+              {{? item.website}}
+              <h3 class="Work-name">
+                <a href="{{= item.website}}" target="blank">
+                {{= item.conference}}
+                </a>
+              </h3>
+              {{??}}
+              <h3 class="Work-name">{{= item.conference}}</h3>
+              {{?}}
+              {{?item.intro}}
+              <p class="Work-intro">{{= item.intro}}</p>
+              {{?}}
+            </li>
+            {{~}}
+          </ul>
+        </section>
+        <section class="Grid-col">
+          <h2><i class="icon-book"></i>Plublications</h2>
+          <hr>
+          <ul class="WorkList">
+            {{~ it.publications :item}}
+            <li class="WorkList-item Work">
+              <h3 class="Work-name">{{= item.name}}</h3>
+              <p class="Work-intro">{{= item.intro}}</p>
+            </li>
+            {{~}}
+          </ul>
+        </section>
+        <section class="Grid-col">
+          <h2><i class="icon-school"></i>Education</h2>
+          <hr>
+          <ul class="WorkList">
+            {{~ it.education :item}}
+            <li class="WorkList-item Work">
+              <h3 class="Work-name">{{= item.name}}</h3>
+              <p class="Work-intro">{{= item.intro}}<br> {{= item.duration}}</p>
+            </li>
+            {{~}}
+          </ul>
+        </section>
+      </div>
+      <section class="u-clearfix">
+        <h2><i class="icon-tool"></i>Skills</h2>
+        <hr>
+        <ul class="SkillList u-reset-ul">
+          {{~ it.skills :skill}}
+          <li class="SkillList-item Skill">
+            <h3 class="Skill-name">{{= skill.name}}</h3>
+            <ul class="Skill-detail">
+              {{~ skill.list :item}}
+              <li>{{= item}}</li>
+              {{~}}
+            </ul>
+          </li>
+          {{~}}
+        </ul>
+      </section>
+      </script>
+    </main>
+
+    <script src="/dist/d05450ba5dfff56feff8cb80745569db.js">
+    </script>
+  </body>
+</html>

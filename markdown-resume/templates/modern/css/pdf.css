@@ -17,7 +17,6 @@ body.pdf {
 
     .resume {
         position:relative;
-        padding: 40px 80px;
     }
 
     a[href$='.pdf'] {

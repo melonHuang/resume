@@ -1,0 +1,214 @@
+@import './normalize.css';
+@import './fontello/css/fontello.css';
+
+:root {
+  --mainColor: #e8b730;
+  /*--lightGrey: #2f4156;*/
+  --lightGrey: #8b96a3;
+  --grey: #2f4156;
+  --fontSize: 14px;
+  --largerFontSize: 1.07em;
+  --smallerFontSize: 13px;
+}
+
+/*util classes*/
+.u-reset-ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.u-fl {
+  float: left;
+}
+
+.u-clearfix {
+  clear: both;
+}
+
+/*common styles*/
+[class^="icon-"] {
+  color: var(--mainColor);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color .15s;
+
+  &:hover {
+    color: #255c7c;
+  }
+}
+
+
+body {
+  background: #9BA2B0;
+  font: var(--fontSize)/1.5 "Helvetica Nueu", Helvetica, sans-serif;
+  color: var(--grey);
+  -webkit-font-smoothing: antialiased;
+  padding: 1em 0;
+}
+
+h1, h2, h3, h4, h5 {
+  -webkit-font-smoothing: auto;
+  color: black;
+  letter-spacing: 1px;
+}
+
+#resume {
+  background: white;
+  box-shadow: 1px 1px 5px 2px rgba(0,0,0,.3);
+  max-width: 800px;
+  margin: auto;
+  padding: 6em;
+}
+
+
+h2 {
+  color: #111;
+  text-transform: uppercase;
+  font-size: 18px;
+  background: white;
+  padding-right: .8em;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  margin: 0;
+
+  & + hr {
+    position: absolute;
+    border: 0;
+    border-bottom: 1px solid #ddd;
+    width: 90%;
+    right: 0;
+    top: .5em;
+  }
+  & [class^="icon-"] {
+    font-size: 1em;
+    margin-left: -0.2em;
+    margin-right: 0.5em;
+    position: relative;
+    top: -1px;
+  }
+}
+
+
+head, section {
+  margin: 1.24em 0;
+}
+
+.Grid {
+  margin: -1.24em 0;
+  display: flex;
+
+  & .Work {
+    padding-left: 0;
+  }
+
+  &-col {
+    flex: 1;
+    margin-bottom: 0;
+  }
+
+  &-col + &-col {
+    margin-left: 1em;
+  }
+}
+
+/*head*/
+header, section {
+  position: relative;
+}
+
+.Name {
+  text-transform: uppercase;
+  color: #222220;
+  font-size: 2.3em;
+  margin-top: 0;
+}
+
+.Slogan {
+  font-size: 16px;
+  margin-top: -20px;
+}
+
+.Slogan, .Contact {
+  color: var(--lightGrey);
+}
+
+.Contact {
+  position: absolute;
+  top: 4px ;
+  right: 0;
+}
+/* summary */
+.Summary {
+  font-size: var(--largerFontSize);
+}
+
+/* Work List */
+.WorkList, .ProjectList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.Work {
+  position: relative;
+  padding-left: 100px;
+  &-duration {
+    position: absolute;
+    margin-top: 1px;
+    left: 0px;
+
+    &--highlight {
+        color: inherit;
+        font-size: 1.1em;
+    }
+  }
+  &-intro {
+    margin-top: -15px;
+  }
+}
+
+.Project {
+  position: relative;
+
+  &-duration {
+    font-size: var(--smallerFontSize) ;
+    /*color: var(--lightGrey);*/
+    /*color: #777;*/
+    position: absolute;
+    left: -89px;
+    /*left: -100px;*/
+    margin-top: 0;
+  }
+
+  &-detail {
+    margin-top: -15px;
+    padding-left: 17px;
+    /*padding-right: 76px;*/
+    font-size: var(--smallerFontSize);
+  }
+}
+
+/*skills*/
+.SkillList {
+  display: flex;
+
+  &-item {
+    flex: 1;
+  }
+
+  &-item + &-item {
+    margin-left: 1em;
+  }
+}
+
+.Skill {
+  &-detail {
+    font-size: var(--smallerFontSize);
+    padding-left: 15px;
+  }
+}
