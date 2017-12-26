@@ -3,7 +3,7 @@ var inline = require('inline-source')
   , path = require('path')
   , htmlpath = path.resolve('build/index.html');
 
-var destPath = path.resolve('me.html')
+var destPath = path.resolve('build/me.html')
 
 inline(htmlpath, {
   attribute: false,
