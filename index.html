@@ -1,0 +1,126 @@
+<!DOCTYPE html> <html> <head> <meta charset="utf-8"> <title>Wendy Huang - I want to build tools for humans</title> <link rel="stylesheet" href="91959775256322cca0cacd92548f3587.css"> </head> <body> <main id="resume"> <script type="template" id="template">
+      <header>
+        <h1 class="Name">{{= it.name}}</h1>
+        <p class="Slogan">{{= it.slogan}}</p>
+        <ul class="Contact u-reset-ul">
+          <li class="ContactItem">
+              <i class="icon-mail"></i>
+              <a href="mailto:{{= it.email}}">{{= it.email}}</a>
+          </li>
+          <li class="ContactItem">
+              <i class="icon-home"></i>
+              <a href="{{= it.website}}">{{= it.website}}</a>
+          </li>
+          <li class="ContactItem">
+              <i class="icon-phone"></i>
+              <a href="tel:{{= it.phone}}">{{= it.phone}}</a>
+          </li>
+        </ul>
+      </header>
+      <section>
+        <h2>Summary</h2>
+        <p class="Summary">{{= it.summary}}</p>
+      </section>
+      <section>
+        <h2>Work Experience</h2>
+        <ul class="WorkList u-reset-ul">
+          {{~ it.works :work}}
+          <li class="WorkList-item Work">
+            <p class="Work-duration">{{= work.duration}}</p>
+            <h3 class="Work-name">{{= work.company}}</h3>
+            <p class="Work-intro">{{= work.position}}</p>
+            <ul class="ProjectList">
+              {{~ work.projects :project}}
+              <li class="ProjectList-item Project">
+                <p class="Project-duration">{{= project.duration}}</p>
+                {{? project.website}}
+                <a href="{{= project.website}}">
+                  <h4 class="Project-name">{{= project.name}}</h4>
+                </a>
+                {{??}}
+                <h4 class="Project-name">{{= project.name}}</h4>
+                {{?}}
+                <ul>
+                  {{~ project.details :detail}}
+                    <li>{{= detail}}</li>
+                  {{~}}
+                </ul>
+              </li>
+              {{~}}
+            </ul>
+          </li>
+          {{~}}
+        </ul>
+      </section>
+      <section>
+        <h2>Open Source Projects</h2>
+        <ul class="WorkList">
+          {{~ it.projects :item}}
+          <li class="WorkList-item Work">
+            <p class="Work-duration">{{= item.duration}}</p>
+            <a href="{{= project.website}}">
+              <h3 class="Work-name">{{= item.name}}</h3>
+            </a>
+            <p class="Work-intro">{{= item.intro}}</p>
+          </li>
+          {{~}}
+        </ul>
+      </section>
+      <section>
+        <h2>Speaking</h2>
+        <ul class="WorkList">
+          {{~ it.speaking :item}}
+          <li class="WorkList-item Work">
+            <p class="Work-duration">{{= item.duration}}</p>
+            {{? item.website}}
+            <a href="{{= item.website}}">
+              <h3 class="Work-name">{{= item.conference}}</h3>
+            </a>
+            {{??}}
+            <h3 class="Work-name">{{= item.conference}}</h3>
+            {{?}}
+          </li>
+          {{~}}
+        </ul>
+      </section>
+      <section>
+        <h2>Plublications</h2>
+        <ul class="WorkList">
+          {{~ it.publications :item}}
+          <li class="WorkList-item Work">
+            <p class="Work-duration">{{= item.duration}}</p>
+            <h3 class="Work-name">{{= item.name}}</h3>
+            <p class="Work-intro">{{= item.intro}}</p>
+          </li>
+          {{~}}
+        </ul>
+      </section>
+      <section>
+        <h2>Education</h2>
+        <ul class="WorkList">
+          {{~ it.education :item}}
+          <li class="WorkList-item Work">
+            <p class="Work-duration">{{= item.duration}}</p>
+            <h3 class="Work-name">{{= item.name}}</h3>
+            <p class="Work-intro">{{= item.intro}}</p>
+          </li>
+          {{~}}
+        </ul>
+      </section>
+      <section>
+        <h2>Skills</h2>
+        <ul class="Skills-list">
+          {{~ it.skills :skill}}
+          <li class="Skills-item Skill">
+            <h3 class="Skill-name">{{= skill.name}}</h3>
+            <ul>
+              {{~ skill.list :item}}
+              <li>{{= item}}</li>
+              {{~}}
+            </ul>
+          </li>
+          {{~}}
+        </ul>
+      </section>
+      </script> </main> <script src="d05450ba5dfff56feff8cb80745569db.js">
+    </script> </body> </html> 
