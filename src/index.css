@@ -212,3 +212,47 @@ header, section {
     padding-left: 15px;
   }
 }
+
+/*skills*/
+@media (max-width: 800px) {
+  body {
+    padding: 0;
+  }
+  #resume {
+    padding: 1.5em 1em;
+  }
+  .Contact {
+    position: static;
+  }
+
+  .Work {
+    padding-left: 0;
+
+    &-duration {
+      position: static;
+      float: right;
+    }
+  }
+
+  .Project-duration {
+    position: static;
+    float: right;
+  }
+
+  .Grid, .SkillList {
+    display: block;
+    overflow: hidden;
+  }
+
+  .Grid {
+    &-col + &-col {
+      margin-left: 0;
+    }
+  }
+
+  .SkillList {
+    &-item + &-item {
+      margin-left: 0;
+    }
+  }
+}

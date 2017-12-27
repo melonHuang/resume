@@ -13,7 +13,7 @@ const resume = {
       duration: '2013 - 2017',
       projects: [
         {
-          name: 'Shengxiang - an online presentation editor',
+          name: 'An online presentation editor - Shengxiang',
           website: 'https://ppt.baomitu.com/editor',
           duration: '2016 - 2017',
           details: [
@@ -25,7 +25,7 @@ const resume = {
           ]
         },
         {
-          name: 'Baomitu - an interactive mobile storytelling platform',
+          name: 'An interactive mobile storytelling platform - Baomitu',
           duration: '2015 - 2016',
           website: 'https://www.baomitu.com/',
           details: [

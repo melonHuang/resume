@@ -68,7 +68,7 @@ require = (function (modules, cache, entry) {
 
   // Override the current require with this new one
   return newRequire;
-})({7:[function(require,module,exports) {
+})({20:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -87,12 +87,12 @@ var resume = {
     position: 'Senior Front-End Developer - <strong>Annual Excellent Employee of department</strong>',
     duration: '2013 - 2017',
     projects: [{
-      name: 'Shengxiang - an online presentation editor',
+      name: 'An online presentation editor - Shengxiang',
       website: 'https://ppt.baomitu.com/editor',
       duration: '2016 - 2017',
       details: ['<strong>Led a team</strong> of four Front-End developers, enforced coding standards, kept the group engaged and passionate.', '<strong>Designed predictable, scalable architecture</strong> with Vue&Vuex (React&Redux alike Javascript libraries).', 'Automated workflow for development, testing, and production environment with Gulp, Webpack, PostCSS, etc.', 'Designed database tables and implemented Back-End logics and APIs using ThinkJS (a Back-End MVC Framework).', 'Designed innovative features and transformed them into coordinated ART and IT deliverables.']
     }, {
-      name: 'Baomitu - an interactive mobile storytelling platform',
+      name: 'An interactive mobile storytelling platform - Baomitu',
       duration: '2015 - 2016',
       website: 'https://www.baomitu.com/',
       details: ['Built <strong>componentized architecture</strong> by designing Nova.js ( a web component framework like Polymer).']
@@ -159,7 +159,7 @@ var resume = {
 };
 
 exports.default = resume;
-},{}],15:[function(require,module,exports) {
+},{}],21:[function(require,module,exports) {
 // doT.js
 // 2011-2014, Laura Doktorova, https://github.com/olado/doT
 // Licensed under the MIT license.
@@ -305,7 +305,7 @@ exports.default = resume;
 	};
 }());
 
-},{}],4:[function(require,module,exports) {
+},{}],10:[function(require,module,exports) {
 "use strict";
 
 var _resume = require("./resume");
@@ -324,7 +324,7 @@ var tmplFun = _dot2.default.template(tmplText);
 var resultText = tmplFun(_resume2.default);
 
 document.querySelector('#resume').innerHTML = resultText;
-},{"./resume":7,"dot":15}],0:[function(require,module,exports) {
+},{"./resume":20,"dot":21}],0:[function(require,module,exports) {
 var global = (1, eval)('this');
 var OldModule = module.bundle.Module;
 function Module() {
@@ -342,7 +342,7 @@ function Module() {
 module.bundle.Module = Module;
 
 if (!module.bundle.parent && typeof WebSocket !== 'undefined') {
-  var ws = new WebSocket('ws://localhost:63175/');
+  var ws = new WebSocket('ws://localhost:54650/');
   ws.onmessage = function(event) {
     var data = JSON.parse(event.data);
 
@@ -443,4 +443,4 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.require, id)
   });
 }
-},{}]},{},[0,4])
+},{}]},{},[0,10])
