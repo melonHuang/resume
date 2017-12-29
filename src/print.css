@@ -22,6 +22,10 @@ head, section {
   left: -94px;
 }
 
+h2 {
+    font-size: 1.2em;
+}
+
 .Grid {
   & h3 {
     font-size: 1.07em;

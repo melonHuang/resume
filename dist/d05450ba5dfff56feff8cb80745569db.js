@@ -68,7 +68,7 @@ require = (function (modules, cache, entry) {
 
   // Override the current require with this new one
   return newRequire;
-})({12:[function(require,module,exports) {
+})({8:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -159,7 +159,7 @@ var resume = {
 };
 
 exports.default = resume;
-},{}],14:[function(require,module,exports) {
+},{}],16:[function(require,module,exports) {
 // doT.js
 // 2011-2014, Laura Doktorova, https://github.com/olado/doT
 // Licensed under the MIT license.
@@ -305,7 +305,7 @@ exports.default = resume;
 	};
 }());
 
-},{}],9:[function(require,module,exports) {
+},{}],5:[function(require,module,exports) {
 "use strict";
 
 var _resume = require("./resume");
@@ -324,7 +324,7 @@ var tmplFun = _dot2.default.template(tmplText);
 var resultText = tmplFun(_resume2.default);
 
 document.querySelector('#resume').innerHTML = resultText;
-},{"./resume":12,"dot":14}],0:[function(require,module,exports) {
+},{"./resume":8,"dot":16}],0:[function(require,module,exports) {
 var global = (1, eval)('this');
 var OldModule = module.bundle.Module;
 function Module() {
@@ -342,7 +342,7 @@ function Module() {
 module.bundle.Module = Module;
 
 if (!module.bundle.parent && typeof WebSocket !== 'undefined') {
-  var ws = new WebSocket('ws://localhost:56376/');
+  var ws = new WebSocket('ws://localhost:51022/');
   ws.onmessage = function(event) {
     var data = JSON.parse(event.data);
 
@@ -443,4 +443,4 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.require, id)
   });
 }
-},{}]},{},[0,9])
+},{}]},{},[0,5])
