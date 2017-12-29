@@ -2,7 +2,7 @@ const resume = {
   name: 'Wendy Huang',
   slogan: 'I want to build tools for humans',
   email: 'melonh0327@gmail.com',
-  website: 'https://github.com/melonHuang',
+  website: 'https://melonhuang.github.io',
   phonePrefix: '(86)',
   phone: '18588640327',
   summary: 'I’m a <strong>Senior Front-End Engineer</strong> with <strong>4 years working experience</strong>. Crafting interesting and useful tools is my jam. In the recent past, I have <strong>given talks</strong> at development conferences, <strong>started several open source projects</strong>, and actively participated in the <strong>translation of technical books</strong>.',
